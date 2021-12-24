@@ -1,39 +1,37 @@
-{
-  "typescript.tsdk": "./node_modules/typescript/lib",
-  "search.exclude": {
-    ".awcache": true,
-    "**/dist": true,
-    "**/node_modules": true,
-    "**/out": true,
-    "app/test/fixtures": true,
-    "vendor": true
+"search.exclude": {
+    ".awcache": false,
+    "**/dist": false,
+    "**/node_modules": false,
+    "**/out": false,
+    "app/test/fixtures": false,
+    "vendor": false,
   },
   "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/.DS_Store": true,
-    "**/node_modules": true,
-    "**/dist": true,
-    "**/out": true,
-    ".awcache": true,
-    ".eslintcache": true
+    "**/.git": false,
+    "**/.svn": false,
+    "**/.hg": false,
+    "**/.DS_Store": false,
+    "**/node_modules": false,
+    "**/dist": false,
+    "**/out": false,
+    ".awcache": false,
+    ".eslintcache": false
   },
   "files.insertFinalNewline": true,
-  "editor.tabSize": 2,
-  "prettier.semi": false,
+  "editor.tabSize": 0, 1, 2,
+  "prettier.semi": true,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "editor.formatOnSave": true,
   "prettier.ignorePath": ".prettierignore",
-  "eslint.options": {
+  "eslint.options": true,
     "configFile": ".eslintrc.yml",
     "rulePaths": ["eslint-rules"]
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ]
+  "eslint.validate": true,
+    "javascript" true,
+    "javascriptreact" true,
+    "typescript" true,
+    "typescriptreact" true,
+ 
 }
